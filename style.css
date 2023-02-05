@@ -1,0 +1,133 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+}
+.bg {
+  background: url("tla/tlo.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.terminal-box {
+  z-index: 10;
+  width: 60vw;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  border-radius: 5px;
+  border: 0.5px solid rgba(150, 150, 150, 0.6);
+  box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.8);
+  
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
+}
+
+.terminal-header {
+  width: 99.9%;
+  padding: 3px 0;
+  background: linear-gradient(rgba(53, 53, 53, 1), rgba(38, 38, 38, 1));
+  border-radius: 5px 5px 0 0;
+  border-top: 0.5px solid rgba(150, 150, 150, 0.6);
+  border-right: 0.5px solid rgba(150, 150, 150, 0.6);
+}
+.terminal-header a {
+  font-size: 9px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  float: left;
+  margin: 2px 3px;
+}
+/*colors*/
+.button-close {
+  background-color: rgb(236, 61, 64);
+  padding: 2px;
+}
+.button-minimize {
+  background-color: rgb(255, 186, 36);
+  padding: 2px;
+}
+.button-maximize {
+  background-color: rgb(25, 200, 50);
+  padding: 2px;
+}
+.text-header {
+  color: rgb(200, 200, 200);
+  text-align: center;
+  font-size: 13px;
+}
+
+.terminal-body {
+  overflow: auto;
+  height: 95%;
+  padding: 0 10px;
+  color: rgb(249, 192, 2);
+  font-size: 15px !important;
+}
+.separator,
+.hostname {
+  color: gray;
+}
+.message {
+  color: rgb(33, 189, 100);
+}
+.message input {
+  border: none;
+  font-size: 15px;
+  width: 280px;
+  background-color: transparent;
+  color: rgb(249, 192, 255);
+}
+
+.message input:focus{
+  outline: none;
+}
+
+.arrow {
+  color: rgb(123, 121, 213);
+}
+
+.max{
+  width: 99.7%;
+  height: 99.3vh;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.mini{
+  width: 60vw;
+  height: 60vh;
+  top: 20vh;
+  left: 20vw;
+  transition: 0.5s;
+}
+
+.txt-white{
+  color: white;
+}
